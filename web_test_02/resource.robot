@@ -6,7 +6,6 @@ ${url}          http://automationpractice.com/index.php
 &{Home}         campo_de_busca=css:#search_query_top
 ...             icone_de_busca=//input[@id="search_query_top"]/following-sibling::button[@type='submit']
 &{messagem}     MSGerro=//a[@<p class="alert alert-warning">No results were found for your search&nbsp;"itemNãoExistente""]
-
 ***Keywords***
 Acessar a página home do site Automation Practice
     [Documentation]     esta keyword é responsavel por abrir o site que iremos fazer automação

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211101 21:35:41.721" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211101 22:18:44.058" rpa="false" schemaversion="2">
 <suite id="s1" name="Web Test 02" source="C:\Users\Maypc\Desktop\@Curso Prime Hero\prime_hero_4\web_test_02">
 <suite id="s1-s1" name="Web Test" source="C:\Users\Maypc\Desktop\@Curso Prime Hero\prime_hero_4\web_test_02\web_test.robot">
 <test id="s1-s1-t1" name="Caso de Teste 02: Pesquisar produto não existente">
@@ -7,49 +7,49 @@
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211101 21:35:42.070" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20211101 21:35:42.070" endtime="20211101 21:35:43.399"/>
+<msg timestamp="20211101 22:18:44.322" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20211101 22:18:44.322" endtime="20211101 22:18:45.011"/>
 </kw>
-<status status="PASS" starttime="20211101 21:35:42.069" endtime="20211101 21:35:43.399"/>
+<status status="PASS" starttime="20211101 22:18:44.321" endtime="20211101 22:18:45.011"/>
 </kw>
 <kw name="Acessar a página home do site Automation Practice" library="resource">
 <doc>esta keyword é responsavel por abrir o site que iremos fazer automação</doc>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211101 21:35:43.401" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
-<status status="PASS" starttime="20211101 21:35:43.400" endtime="20211101 21:35:48.726"/>
+<msg timestamp="20211101 22:18:45.012" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" starttime="20211101 22:18:45.012" endtime="20211101 22:18:49.936"/>
 </kw>
-<status status="PASS" starttime="20211101 21:35:43.400" endtime="20211101 21:35:48.728"/>
+<status status="PASS" starttime="20211101 22:18:45.012" endtime="20211101 22:18:49.936"/>
 </kw>
 <kw name="Digitar o nome do produto &quot;itemNãoExistente&quot; no campo de pesquisa" library="resource" sourcename="Digitar o nome do produto &quot;${produto}&quot; no campo de pesquisa">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Home.campo_de_busca}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211101 21:35:48.732" endtime="20211101 21:35:48.782"/>
+<status status="PASS" starttime="20211101 22:18:49.938" endtime="20211101 22:18:49.975"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Home.campo_de_busca}</arg>
 <arg>${produto}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211101 21:35:48.784" level="INFO">Typing text 'itemNãoExistente' into text field 'css:#search_query_top'.</msg>
-<status status="PASS" starttime="20211101 21:35:48.783" endtime="20211101 21:35:48.879"/>
+<msg timestamp="20211101 22:18:49.976" level="INFO">Typing text 'itemNãoExistente' into text field 'css:#search_query_top'.</msg>
+<status status="PASS" starttime="20211101 22:18:49.975" endtime="20211101 22:18:50.070"/>
 </kw>
-<status status="PASS" starttime="20211101 21:35:48.730" endtime="20211101 21:35:48.879"/>
+<status status="PASS" starttime="20211101 22:18:49.937" endtime="20211101 22:18:50.071"/>
 </kw>
 <kw name="Clicar no botão pesquisar" library="resource">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Home.icone_de_busca}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20211101 21:35:48.880" endtime="20211101 21:35:48.909"/>
+<status status="PASS" starttime="20211101 22:18:50.072" endtime="20211101 22:18:50.103"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Home.icone_de_busca}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211101 21:35:48.910" level="INFO">Clicking element '//input[@id="search_query_top"]/following-sibling::button[@type='submit']'.</msg>
-<status status="PASS" starttime="20211101 21:35:48.909" endtime="20211101 21:35:50.394"/>
+<msg timestamp="20211101 22:18:50.104" level="INFO">Clicking element '//input[@id="search_query_top"]/following-sibling::button[@type='submit']'.</msg>
+<status status="PASS" starttime="20211101 22:18:50.103" endtime="20211101 22:18:52.910"/>
 </kw>
-<status status="PASS" starttime="20211101 21:35:48.880" endtime="20211101 21:35:50.394"/>
+<status status="PASS" starttime="20211101 22:18:50.071" endtime="20211101 22:18:52.910"/>
 </kw>
 <kw name="Conferir se a mensagem &quot;MSGerro&quot; foi listado no site" library="resource">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -57,10 +57,10 @@
 <doc>Waits until the element ``locator`` is visible.</doc>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211101 21:35:50.584" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211101 21:35:50.415" endtime="20211101 21:35:50.584"/>
+<msg timestamp="20211101 22:18:53.057" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211101 22:18:52.945" endtime="20211101 22:18:53.058"/>
 </kw>
-<msg timestamp="20211101 21:35:50.588" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[@&lt;p class="alert alert-warning"&gt;No results were found for your search&amp;nbsp;"itemNãoExistente""] because of the following error:
+<msg timestamp="20211101 22:18:53.062" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[@&lt;p class="alert alert-warning"&gt;No results were found for your search&amp;nbsp;"itemNãoExistente""] because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@&lt;p class="alert alert-warning"&gt;No results were found for your search&amp;nbsp;"itemNãoExistente""]' is not a valid XPath expression.
   (Session info: chrome=95.0.4638.54)
 Stacktrace:
@@ -90,18 +90,18 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x773D7A7E+286]
 	RtlGetAppContainerNamedObjectPath [0x773D7A4E+238]
 </msg>
-<status status="FAIL" starttime="20211101 21:35:50.395" endtime="20211101 21:35:50.588"/>
+<status status="FAIL" starttime="20211101 22:18:52.912" endtime="20211101 22:18:53.062"/>
 </kw>
-<status status="FAIL" starttime="20211101 21:35:50.394" endtime="20211101 21:35:50.588"/>
+<status status="FAIL" starttime="20211101 22:18:52.911" endtime="20211101 22:18:53.062"/>
 </kw>
 <kw name="fechar navegador" library="resource" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20211101 21:35:50.589" endtime="20211101 21:35:52.754"/>
+<status status="PASS" starttime="20211101 22:18:53.063" endtime="20211101 22:18:55.223"/>
 </kw>
-<status status="PASS" starttime="20211101 21:35:50.589" endtime="20211101 21:35:52.755"/>
+<status status="PASS" starttime="20211101 22:18:53.063" endtime="20211101 22:18:55.224"/>
 </kw>
-<status status="FAIL" starttime="20211101 21:35:42.068" endtime="20211101 21:35:52.757">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[@&lt;p class="alert alert-warning"&gt;No results were found for your search&amp;nbsp;"itemNãoExistente""] because of the following error:
+<status status="FAIL" starttime="20211101 22:18:44.320" endtime="20211101 22:18:55.226">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[@&lt;p class="alert alert-warning"&gt;No results were found for your search&amp;nbsp;"itemNãoExistente""] because of the following error:
 SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@&lt;p class="alert alert-warning"&gt;No results were found for your search&amp;nbsp;"itemNãoExistente""]' is not a valid XPath expression.
   (Session info: chrome=95.0.4638.54)
 Stacktrace:
@@ -132,9 +132,9 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x773D7A4E+238]
 </status>
 </test>
-<status status="FAIL" starttime="20211101 21:35:41.780" endtime="20211101 21:35:52.782"/>
+<status status="FAIL" starttime="20211101 22:18:44.089" endtime="20211101 22:18:55.254"/>
 </suite>
-<status status="FAIL" starttime="20211101 21:35:41.726" endtime="20211101 21:35:52.787"/>
+<status status="FAIL" starttime="20211101 22:18:44.061" endtime="20211101 22:18:55.265"/>
 </suite>
 <statistics>
 <total>
